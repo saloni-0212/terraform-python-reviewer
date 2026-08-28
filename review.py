@@ -112,7 +112,7 @@ def post_inline_comments():
                 body=issue["body"],
                 commit_id=commit_id,
                 path=issue["path"],
-                line=int(issue["line"])
+                line=int(issue["line"]),
                 side="RIGHT"
             )
             print(f"✅ Posted inline comment on {issue['path']} (Line {issue['line']})", flush=True)
