@@ -110,7 +110,7 @@ def post_inline_comments():
         try:
             pr.create_review_comment(
                 body=issue["body"],
-                commit=commit,
+                commit_id=commit_id,
                 path=issue["path"],
                 line=int(issue["line"]),
                 side="RIGHT"
