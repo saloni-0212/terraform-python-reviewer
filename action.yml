@@ -72,5 +72,6 @@ runs:
         GITHUB_TOKEN: ${{ inputs.github_token }} # It needs this to write comments!
         PR_NUMBER: ${{ github.event.pull_request.number }}
         REPO_NAME: ${{ github.repository }}
+        PLAN_PATH: ${{ inputs.plan_path }}
       run: python -u ${{ github.action_path }}/review.py --mode inline
       shell: bash
